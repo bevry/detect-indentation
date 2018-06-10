@@ -1,57 +1,110 @@
 'use strict'
 
 const joe = require('joe')
-const { equal } = require('assert-helpers')
+const { equal, errorEqual } = require('assert-helpers')
 const detectIndentation = require('./')
 
 joe.suite('detect-indentation', function (suite, test) {
 	const tests = [
 		{
-			name: '4 spaces from start',
-			input: '    a\n    b',
-			output: '    '
+			name: 'none',
+			input: 'a\nb',
+			output: null
 		},
 		{
-			name: '4 spaces from later',
+			name: 'spaces: 0, 4',
 			input: 'a\n    b',
 			output: '    '
 		},
 		{
-			name: '1 tab from start',
-			input: '\ta\n\tb',
-			output: '\t'
+			name: 'spaces: 0, 4, 8',
+			input: 'a\n    b\n        c',
+			output: '    '
 		},
 		{
-			name: '1 tab from later',
+			name: 'spaces: 4, 4',
+			input: '    a\n    b',
+			output: '    '
+		},
+		{
+			name: 'spaces: 4, 8',
+			input: '    a\n        b',
+			output: '    '
+		},
+		{
+			name: 'spaces: 4, 0, 4',
+			input: '    a\nb\n    c',
+			output: '    '
+		},
+		{
+			name: 'spaces: 8, 4, 8',
+			input: '        a\n    b\n        c',
+			output: '    '
+		},
+		{
+			name: 'spaces: 4, 8, 4',
+			input: '    a\n        b\n    c',
+			output: '    '
+		},
+		{
+			name: 'tabs: 0, 1',
 			input: 'a\n\tb',
 			output: '\t'
 		},
 		{
-			name: 'mixed 1 and 2 tabs - double first',
-			input: 'a\n\t\tb\n\tc',
-			output: '\t\t'
-		},
-		{
-			name: 'mixed 1 and 2 tabs - single first',
+			name: 'tabs: 0, 1, 2',
 			input: 'a\n\tb\n\t\tc',
 			output: '\t'
 		},
 		{
-			name: 'mixed tabs and 4 spaces - tab first',
-			input: 'a\n\tb\n    c',
+			name: 'tabs: 1, 1',
+			input: '\ta\n\tb',
 			output: '\t'
 		},
 		{
-			name: 'mixed tabs and 4 spaces - 4 spaces first',
-			input: 'a\n    b\n\tc',
-			output: '    '
+			name: 'tabs: 1, 2',
+			input: '\ta\n\t\tb',
+			output: '\t'
 		},
 		{
-			name: 'no indentation',
-			input: 'a',
-			output: ''
+			name: 'tabs: 1, 2, 1',
+			input: '\ta\n\t\tb\n\tc',
+			output: '\t'
+		},
+		{
+			name: 'tabs: 1, 0, 1',
+			input: '\ta\nb\n\tc',
+			output: '\t'
+		},
+		{
+			name: 'tabs: 2, 1, 2',
+			input: '\t\ta\n\tb\n\t\tc',
+			output: '\t'
 		}
 	]
+	const errors = [
+		{
+			name: 'uneven: 2s, 3s',
+			input: '  a\n   b',
+			output: 'indentation is uneven: [  ] of size [2] vs [   ] of size [3]'
+		},
+		{
+			name: 'uneven: 2t, 3t',
+			input: '\t\ta\n\t\t\tb',
+			output: 'indentation is uneven: [\t\t] of size [2] vs [\t\t\t] of size [3]'
+		},
+		{
+			name: 'mixed: 4s, 2t',
+			input: '    a\n\t\tb',
+			output: 'mixed spaces and tabs'
+		},
+		{
+			name: 'mixed: 2t, 4s',
+			input: '    a\n\t\tb',
+			output: 'mixed spaces and tabs'
+		}
+	]
+
 	tests.forEach(function ({ name, input, output }) {
 		test(name, function () {
 			equal(
@@ -59,6 +112,22 @@ joe.suite('detect-indentation', function (suite, test) {
 				output,
 				name
 			)
+		})
+	})
+
+	errors.forEach(function ({ name, input, output }) {
+		test(name, function () {
+			try {
+				detectIndentation(input)
+				throw new Error('test should have failed but it did not')
+			}
+			catch (error) {
+				errorEqual(
+					error,
+					output,
+					name
+				)
+			}
 		})
 	})
 })
