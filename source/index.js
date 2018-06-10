@@ -22,13 +22,13 @@ function detectIndentation (source) {
 
 	// validate sizes
 	const indentations = (spaces || tabs).sort((a, b) => a.length - b.length)
+	const initialIndentation = indentations[0]
+	const initialIndentationSize = initialIndentation.length
 	for (let i = 1; i < indentations.length; i++) {
-		const lastIndentation = indentations[i - 1]
-		const indentation = indentations[i]
-		const lastSize = lastIndentation.length
-		const size = indentation.length
-		if ((size % lastSize) !== 0) {
-			throw new Error(`indentation is uneven: [${lastIndentation}] of size [${lastSize}] vs [${indentation}] of size [${size}]`)
+		const currentIndentation = indentations[i]
+		const currentIndentationSize = currentIndentation.length
+		if ((currentIndentationSize % initialIndentationSize) !== 0) {
+			throw new Error(`indentation is uneven: [${initialIndentation}] of size [${initialIndentationSize}] vs [${currentIndentation}] of size [${currentIndentationSize}]`)
 		}
 	}
 

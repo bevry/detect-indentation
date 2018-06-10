@@ -32,6 +32,11 @@ joe.suite('detect-indentation', function (suite, test) {
 			output: '    '
 		},
 		{
+			name: 'spaces: 4, 8, 12',
+			input: '    a\n        b\n            c',
+			output: '    '
+		},
+		{
 			name: 'spaces: 4, 0, 4',
 			input: '    a\nb\n    c',
 			output: '    '
@@ -64,6 +69,11 @@ joe.suite('detect-indentation', function (suite, test) {
 		{
 			name: 'tabs: 1, 2',
 			input: '\ta\n\t\tb',
+			output: '\t'
+		},
+		{
+			name: 'tabs: 1, 2, 3',
+			input: '\ta\n\t\tb\n\t\t\tc',
 			output: '\t'
 		},
 		{

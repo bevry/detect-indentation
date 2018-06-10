@@ -1,5 +1,8 @@
 # History
 
+## v2.1.0 2018 June 10
+- Fixed an obvious edge case for uneven indentation detection
+
 ## v2.0.0 2018 June 10
 - More accurate and robust indentation detection
 
