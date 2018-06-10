@@ -56,7 +56,8 @@
       "syntaxes": [
         "javascript",
         "esnext",
-        "require"
+        "require",
+        "const"
       ]
     },
     {
