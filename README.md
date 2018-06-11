@@ -32,6 +32,10 @@ Utility to detect the indentation used in a string
 <!-- /DESCRIPTION -->
 
 
+- Use [trim-indentation](https://github.com/bevry/trim-indentation) to trim the initial indentation, useful for prepartion for the other two
+- Use [detect-indentation](https://github.com/bevry/detect-indentation) to accurately detect the indentation that is used
+- Use [remove-indentation](https://github.com/bevry/remove-indentation) to accurately remove iterations of indentation
+
 <!-- INSTALL/ -->
 
 <h2>Install</h2>
