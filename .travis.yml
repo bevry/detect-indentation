@@ -1,33 +1,26 @@
 sudo: false
 language: node_js
 node_js:
-- '0.8'
-- '0.10'
-- '0.12'
 - '4'
 - '6'
 - '8'
 - '10'
+- '11'
 matrix:
   fast_finish: true
-  allow_failures:
-  - node_js: '0.8'
-  - node_js: '0.10'
-  - node_js: '0.12'
+  allow_failures: []
 cache:
   directories:
   - "$HOME/.npm"
   - "$HOME/.yarn-cache"
 install:
-- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/1ec050bc004d0e2161cb5286c247850d24aecc02/scripts/node-install.bash)"
+- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/1f4c6b3d2a0315d3fcd66e8a2cb5de31889ea87d/scripts/node-install.bash)"
 before_script:
-- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/1ec050bc004d0e2161cb5286c247850d24aecc02/scripts/node-verify.bash)"
+- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/1f4c6b3d2a0315d3fcd66e8a2cb5de31889ea87d/scripts/node-verify.bash)"
 after_success:
-- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/1ec050bc004d0e2161cb5286c247850d24aecc02/scripts/surge.bash)"
-- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/1ec050bc004d0e2161cb5286c247850d24aecc02/scripts/node-publish.bash)"
+- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/1f4c6b3d2a0315d3fcd66e8a2cb5de31889ea87d/scripts/surge.bash)"
+- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/1f4c6b3d2a0315d3fcd66e8a2cb5de31889ea87d/scripts/node-publish.bash)"
 notifications:
-  slack:
-    secure: QsLsI+EJETqC9ZpyKZBH8xSWjIY9SjL20H9J3nozFMkZEd6nXZ4+YM2jIqH3E2cxhoKCBqplDr7X+tx+ZgbkLI9aZvU4SoKNEQ8UXfP8/GCw2Z7NWTaV9Bt+mCMfo0AotDkerbxtwgKJplHx/jDrJ4K8rvqnrf3MPebW0wu0g++01cD7k4v0lGNm/Lk/lcncv6gzSltsrWnVvZmEGN7vRV+CLshZ+BuzlMwehR9ilvgjN+qCceVY18iyDRoftjF7hDDkeHhj3gVc3eX0n91LPvHMWmLP8L71ZeI1wfhPfNuXq5Xdm69xZBO1PM14BlHAgKiMXlX2fCWws6ih7L7itOjc872/Ox+QItw9mOb+QartBJInVbP2gk5PexHheUpDT3JJ1+To3S3USiAkuMQDSwop0BYS+9wRndnmrqzXaDRNAmnUHTe+Ow/JbSS3Xf/VWdBIIFbu1ne2h6VUGWWAaXCe84kKwOlav3rzOMyB+BrQWGBGrzxo51fS/5wmbOWl3imN6QxWlVsqSGYyr3dOFVVy8R0CWrFWbBDKyM9AYj8hZlmAjBvKsJcejFGRBfmbtHIbQd8ULzpqm/9RkzlNTM+ZU460CyM96aCmSihoMq6U1b9emAf+CgINKNQ35dCMo7bslFOBXaO49w77mEVA8Qp+yMV5mwieTeaVTCMEo0o=
   email:
     recipients:
-      secure: S2cViBujUp7W1M4DpUOFePpyq3Qs91e/lScNBnm4XE1hLz/Gt6cc9Snt5cEJAip2ndgsj7snKL9wB/XEXCvPSWPpwjaaWL8g6oWWjvLswmxeRCXH5nRz38xiZIRx6xCWQ4oPS+5e3V2OaKW45rFjZZvHgXaJJuQZJ/WatJPW8WH9bkR91/Nn+iwLLBUDHpO63MBPH4c1VD9hbNM6zFv07kkkX3G1MiS+S7MFDK1C40a2nOzIPPeyMuRpy1bGEPGmnI3hijSRSXzy56M1VpgVVUlZ8/4PK1FjapD0fIzqO+6Er2HnBWEHxL64l/on7cTG06q3bVvQm7QN2fOhStmFES7RzBnyfUjQj9kjZ+SJAU4CrrLeJadzJkV8YhcFtmtJ0UcOUp6kuBPUtUWK6OBbyb8BSkcIwjmT7skdwXgD0e8h1Kw0dliTY/jARQ0zip879uFdpyphAjQTgxH16MPEEVzvUD/gVrV3WZIMohj9OLDB3w2bAq2LNJN37chDBx9XQYDvsSnGQADSvE3BBkuZDd1/UQwRMFx59xY4nHTGzqjvOhiU3SNkSzNitf9VXVZa4nOe3Q5QrJry/UQs2G+lXkj7zCYjoJFKeYC2YfJmRk47cY53zzA2pCq21Zi+5BngI0HAeSgDNIclRFAhmL2W7nzCidWa5CoEKgQWqJk/eaw=
+      secure: kSKt9QUKAHZsjAr+8fF1huS9HLrAkJwi00tVm7ceZ5h6jx1uw1QNF/iKku+W8iCfPsAA8PjpdTe1oUJw+priIzIInSruQjwAMqu47XMqLvgTQIANlJ0HbdpZBngu4UVNQVYp/p9dgjCOXkzSoIEk62jDk161nsCZyf0AM18C2p9lRFxPYDYKpZwnHk6rgnZfZt9e82bTsgtcmPolu0dQ9+rbKrumO0e19/lFBmxgQ/KA/6O/7TxPwQJ8RSH505RWjoCfm9NowgQE4p7Y93C3xEV15f+r4gcmOPRPIpBDgaeyjxg/fO68phPRWCI83AYONHI6Fxf+kQ53hdNsYbUFpjlOfDPDO1xpAU/6Fw6KK8rbmA5ec63/OFJQQ8tOlB6XFMrh4z/kDqmhLYLddnxE9Ex5CH3ouOaAmb1+XdxmObl4PWSqx8fEcaUlz9OfOc8fJcRrEkx6vVLqXDi0s9kDJRhpSu5cyKpMZffaoIE/ymSbwQ09Od7heUhgyLT54QMq/1qL7sE0j+RpHPJQQ0EmrE05wS7fuqaEOSIWFlVTbixEud/T23tuNkBC7dpFWnT2iopCrOlgNKKlNb2oKhTYZ2EbhUZlXnvMZL9l7jN3T+wTE5+uOA2aLTVDuBy4Xh/f/Qee3ZNmqIO3AgOJQ0yN3G3SQhXuR60uBihnN05Q9uM=

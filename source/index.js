@@ -10,7 +10,7 @@ const indentationTabsRegex = /^(\t+)/gm
  * @throws {error} mixed spaces and tabs
  * @throws {error} indentation is uneven: [W] of size [X] vs [Y] of size [Z]
  */
-function detectIndentation (source) {
+function detectIndentation(source) {
 	const spaces = source.match(indentationSpacesRegex)
 	const tabs = source.match(indentationTabsRegex)
 
@@ -27,8 +27,10 @@ function detectIndentation (source) {
 	for (let i = 1; i < indentations.length; i++) {
 		const currentIndentation = indentations[i]
 		const currentIndentationSize = currentIndentation.length
-		if ((currentIndentationSize % initialIndentationSize) !== 0) {
-			throw new Error(`indentation is uneven: [${initialIndentation}] of size [${initialIndentationSize}] vs [${currentIndentation}] of size [${currentIndentationSize}]`)
+		if (currentIndentationSize % initialIndentationSize !== 0) {
+			throw new Error(
+				`indentation is uneven: [${initialIndentation}] of size [${initialIndentationSize}] vs [${currentIndentation}] of size [${currentIndentationSize}]`
+			)
 		}
 	}
 

@@ -1,10 +1,10 @@
 'use strict'
 
-const joe = require('joe')
+const kava = require('kava')
 const { equal, errorEqual } = require('assert-helpers')
 const detectIndentation = require('./')
 
-joe.suite('detect-indentation', function (suite, test) {
+kava.suite('detect-indentation', function(suite, test) {
 	const tests = [
 		{
 			name: 'none',
@@ -101,7 +101,8 @@ joe.suite('detect-indentation', function (suite, test) {
 		{
 			name: 'uneven: 2t, 3t',
 			input: '\t\ta\n\t\t\tb',
-			output: 'indentation is uneven: [\t\t] of size [2] vs [\t\t\t] of size [3]'
+			output:
+				'indentation is uneven: [\t\t] of size [2] vs [\t\t\t] of size [3]'
 		},
 		{
 			name: 'mixed: 4s, 2t',
@@ -115,28 +116,19 @@ joe.suite('detect-indentation', function (suite, test) {
 		}
 	]
 
-	tests.forEach(function ({ name, input, output }) {
-		test(name, function () {
-			equal(
-				detectIndentation(input),
-				output,
-				name
-			)
+	tests.forEach(function({ name, input, output }) {
+		test(name, function() {
+			equal(detectIndentation(input), output, name)
 		})
 	})
 
-	errors.forEach(function ({ name, input, output }) {
-		test(name, function () {
+	errors.forEach(function({ name, input, output }) {
+		test(name, function() {
 			try {
 				detectIndentation(input)
 				throw new Error('test should have failed but it did not')
-			}
-			catch (error) {
-				errorEqual(
-					error,
-					output,
-					name
-				)
+			} catch (error) {
+				errorEqual(error, output, name)
 			}
 		})
 	})
