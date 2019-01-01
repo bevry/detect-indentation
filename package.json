@@ -1,6 +1,6 @@
 {
   "name": "detect-indentation",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Utility to detect the indentation used in a string",
   "homepage": "https://github.com/bevry/detect-indentation",
   "license": "MIT",

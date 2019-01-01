@@ -1,5 +1,9 @@
 # History
 
+## v2.2.0 2019 January 1
+
+-   Updated [base files](https://github.com/bevry/base) and [editions](https://editions.bevry.me) using [boundation](https://github.com/bevry/boundation)
+
 ## v2.1.0 2018 June 10
 
 -   Fixed an obvious edge case for uneven indentation detection
