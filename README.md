@@ -58,10 +58,9 @@ Utility to detect the indentation used in a string
 
 <p>This package is published with the following editions:</p>
 
-<ul><li><code>detect-indentation</code> aliases <code>detect-indentation/index.js</code> which uses <a href="https://editions.bevry.me" title="Editions are the best way to produce and consume packages you care about.">Editions</a> to automatically select the correct edition for the consumers environment</li>
+<ul><li><code>detect-indentation</code> aliases <code>detect-indentation/source/index.js</code></li>
 <li><code>detect-indentation/source/index.js</code> is esnext source code with require for modules</li>
-<li><code>detect-indentation/edition-browsers/index.js</code> is esnext compiled for browsers with require for modules</li>
-<li><code>detect-indentation/edition-node-4/index.js</code> is esnext compiled for node.js 4 with require for modules</li></ul>
+<li><code>detect-indentation/edition-browsers/index.js</code> is esnext compiled for browsers with require for modules</li></ul>
 
 <h3><a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a></h3>
 
@@ -130,7 +129,8 @@ No sponsors yet! Will you be the first?
 
 These amazing people have contributed code to this project:
 
-<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/detect-indentation/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/detect-indentation">view contributions</a></li></ul>
+<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/detect-indentation/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/detect-indentation">view contributions</a></li>
+<li><a href="http://github.com/apps/dependabot-preview">dependabot-preview[bot]</a> — <a href="https://github.com/bevry/detect-indentation/commits?author=dependabot-preview[bot]" title="View the GitHub contributions of dependabot-preview[bot] on repository bevry/detect-indentation">view contributions</a></li></ul>
 
 <a href="https://github.com/bevry/detect-indentation/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 
