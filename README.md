@@ -58,7 +58,7 @@ Utility to detect the indentation used in a string
 
 ``` html
 <script type="module">
-    import * as pkg from '//dev.jspm.io/detect-indentation@4.0.0'
+    import * as pkg from '//dev.jspm.io/detect-indentation@4.1.0'
 </script>
 ```
 
