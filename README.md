@@ -58,7 +58,7 @@ Utility to detect the indentation used in a string
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.pika.dev/detect-indentation/^4.2.0'
+    import pkg from '//cdn.pika.dev/detect-indentation/^5.0.0'
 </script>
 ```
 
@@ -66,7 +66,7 @@ Utility to detect the indentation used in a string
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/detect-indentation@^4.2.0'
+    import pkg from '//unpkg.com/detect-indentation@^5.0.0'
 </script>
 ```
 
@@ -74,7 +74,7 @@ Utility to detect the indentation used in a string
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/detect-indentation@4.2.0'
+    import pkg from '//dev.jspm.io/detect-indentation@5.0.0'
 </script>
 ```
 
