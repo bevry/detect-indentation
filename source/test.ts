@@ -1,8 +1,6 @@
-'use strict'
-
-const kava = require('kava')
-const { equal, errorEqual } = require('assert-helpers')
-const detectIndentation = require('./')
+import kava from 'kava'
+import { equal, errorEqual } from 'assert-helpers'
+import detectIndentation from './'
 
 kava.suite('detect-indentation', function (suite, test) {
 	const tests = [
