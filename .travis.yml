@@ -25,3 +25,7 @@ after_success:
   - >-
     eval "$(curl -fsSL
     https://raw.githubusercontent.com/bevry/awesome-travis/9fa2fa025c77b463d03154f39922af95cadc9c67/scripts/node-publish.bash)"
+notifications:
+  email:
+    recipients: >-
+      PWNS0yvhS34SyOyvZqNQ38fii20abmsDl8SI+ovlltdC/OKInls+NhRRQmKmCozaMg6TVFfBUzW3U1JanpsDM/njQUW/+MrDLQtnmvdfn1T1zt2AlaLfLuCCxZK0KZs4zxuT73sKSpDafkq0cYCugIXUog+1vvStffwFxNKnhvb2ZNjAxH9hQGlllfo+6HOTHlUlcVQfypdQuMBvMwVNVxdyvuAN12ihQ8wV9Grf5jPCXgzO62gMffkt7TQpRtLM1qRoCZOqh+4ESnQk38896OwNb8NJiy3FW88VJmBLWSaXDIHbHRMkSeS95WVf1Padb2r6ijBUouxuR4gEOYyMfGxd8Vr4MNzWyCB3Fy4p+MQNGLWY8kRMMkaofMuFNHPmuIOox8gYEJzCtq4m8EOFOSb8CjnG74K3f/5e/9jzMI0hIpMXPiBHWK9wDZJvqqNzhdbTo0/5JuCg4dAxEvCWKZPyLx681fhTLUWwXgHQrGJ6K6nwYyuK3qiYe0MAvbbvW3H+IdXR9vAcrG9HdVLMmAAJwmE75jfwkZxvfghpOjEVoJXN71o3/i9cdjyjGQJh5H++qMfsWSeXmYc+Id69DlBkj8ubTHiRr0wMERn3E++Ek5LcZgYbqCZetWDbLMHolYpox9F59tN8ZIM8Db5DhVPYZ+f3KzXKBpQk2FGlAF8=

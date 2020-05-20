@@ -136,7 +136,8 @@ No sponsors yet! Will you be the first?
 
 These amazing people have contributed code to this project:
 
-<ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/detect-indentation/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/detect-indentation">view contributions</a></li></ul>
+<ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/detect-indentation/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/detect-indentation">view contributions</a></li>
+<li><a href="https://github.com/sumitrai">Sumit Rai</a> — <a href="https://github.com/bevry/detect-indentation/commits?author=sumitrai" title="View the GitHub contributions of Sumit Rai on repository bevry/detect-indentation">view contributions</a></li></ul>
 
 <a href="https://github.com/bevry/detect-indentation/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 

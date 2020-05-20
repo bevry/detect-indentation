@@ -58,7 +58,8 @@
     "Benjamin Lupton (https://github.com/balupton)"
   ],
   "contributors": [
-    "Benjamin Lupton (https://github.com/balupton)"
+    "Benjamin Lupton (https://github.com/balupton)",
+    "Sumit Rai (https://github.com/sumitrai)"
   ],
   "bugs": {
     "url": "https://github.com/bevry/detect-indentation/issues"
@@ -128,7 +129,7 @@
     "projectz": "^2.1.0",
     "surge": "^0.21.3",
     "typedoc": "^0.17.7",
-    "typescript": "^3.9.2",
+    "typescript": "^3.9.3",
     "valid-directory": "^1.6.0",
     "valid-module": "^1.0.0"
   },
