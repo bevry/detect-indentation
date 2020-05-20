@@ -3,7 +3,7 @@
 ## v5.0.0 2020 May 19
 
 -   Converted from JavaScript to TypeScript
--   If you are using CommonJS, you must now do require('detect-indentation').default
+-   If you are using CommonJS, you must now do `require('detect-indentation').default`
 -   Updated dependencies, [base files](https://github.com/bevry/base), and [editions](https://editions.bevry.me) using [boundation](https://github.com/bevry/boundation)
 
 ## v4.2.0 2020 May 12
