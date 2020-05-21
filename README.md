@@ -58,7 +58,7 @@ Utility to detect the indentation used in a string
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.pika.dev/detect-indentation/^5.0.0'
+    import pkg from '//cdn.pika.dev/detect-indentation/^5.1.0'
 </script>
 ```
 
@@ -66,7 +66,7 @@ Utility to detect the indentation used in a string
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/detect-indentation@^5.0.0'
+    import pkg from '//unpkg.com/detect-indentation@^5.1.0'
 </script>
 ```
 
@@ -74,7 +74,7 @@ Utility to detect the indentation used in a string
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/detect-indentation@5.0.0'
+    import pkg from '//dev.jspm.io/detect-indentation@5.1.0'
 </script>
 ```
 
@@ -116,7 +116,7 @@ Utility to detect the indentation used in a string
 
 These amazing people are maintaining this project:
 
-<ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/detect-indentation/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/detect-indentation">view contributions</a></li></ul>
+<ul><li><a href="https://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/detect-indentation/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/detect-indentation">view contributions</a></li></ul>
 
 <h3>Sponsors</h3>
 
@@ -136,7 +136,7 @@ No sponsors yet! Will you be the first?
 
 These amazing people have contributed code to this project:
 
-<ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/detect-indentation/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/detect-indentation">view contributions</a></li>
+<ul><li><a href="https://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/detect-indentation/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/detect-indentation">view contributions</a></li>
 <li><a href="https://github.com/sumitrai">Sumit Rai</a> — <a href="https://github.com/bevry/detect-indentation/commits?author=sumitrai" title="View the GitHub contributions of Sumit Rai on repository bevry/detect-indentation">view contributions</a></li></ul>
 
 <a href="https://github.com/bevry/detect-indentation/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
@@ -150,7 +150,7 @@ These amazing people have contributed code to this project:
 
 Unless stated otherwise all works are:
 
-<ul><li>Copyright &copy; 2018+ Benjamin Lupton</li></ul>
+<ul><li>Copyright &copy; 2018+ <a href="https://balupton.com">Benjamin Lupton</a></li></ul>
 
 and licensed under:
 
