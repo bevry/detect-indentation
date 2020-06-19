@@ -57,14 +57,14 @@ Utility to detect the indentation used in a string
 <a href="https://deno.land" title="Deno is a secure runtime for JavaScript and TypeScript, it is an alternative for Node.js"><h3>Deno</h3></a>
 
 ``` typescript
-import pkg from 'https://unpkg.com/detect-indentation@^5.4.0/edition-deno/index.ts'
+import pkg from 'https://unpkg.com/detect-indentation@^5.5.0/edition-deno/index.ts'
 ```
 
 <a href="https://www.pika.dev/cdn" title="100% Native ES Modules CDN"><h3>pika</h3></a>
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.pika.dev/detect-indentation/^5.4.0'
+    import pkg from '//cdn.pika.dev/detect-indentation/^5.5.0'
 </script>
 ```
 
@@ -72,7 +72,7 @@ import pkg from 'https://unpkg.com/detect-indentation@^5.4.0/edition-deno/index.
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/detect-indentation@^5.4.0'
+    import pkg from '//unpkg.com/detect-indentation@^5.5.0'
 </script>
 ```
 
@@ -80,7 +80,7 @@ import pkg from 'https://unpkg.com/detect-indentation@^5.4.0/edition-deno/index.
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/detect-indentation@5.4.0'
+    import pkg from '//dev.jspm.io/detect-indentation@5.5.0'
 </script>
 ```
 
