@@ -1,6 +1,6 @@
 import kava from 'kava'
 import { equal, errorEqual } from 'assert-helpers'
-import detectIndentation from './'
+import detectIndentation from './index.js'
 
 kava.suite('detect-indentation', function (suite, test) {
 	const tests = [
