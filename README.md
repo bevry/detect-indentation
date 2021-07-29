@@ -39,7 +39,7 @@ Utility to detect the indentation used in a string
 
 ## Usage
 
-[Complete API Documentation.](http://master.detect-indentation.bevry.surge.sh/docs/globals.html)
+[Complete API Documentation.](http://master.detect-indentation.bevry.surge.sh/docs/)
 
 [Tests.](https://github.com/bevry/detect-indentation/blob/master/source/test.js)
 
@@ -57,14 +57,14 @@ Utility to detect the indentation used in a string
 <a href="https://deno.land" title="Deno is a secure runtime for JavaScript and TypeScript, it is an alternative for Node.js"><h3>Deno</h3></a>
 
 ``` typescript
-import pkg from 'https://unpkg.com/detect-indentation@^5.19.0/edition-deno/index.ts'
+import pkg from 'https://unpkg.com/detect-indentation@^5.20.0/edition-deno/index.ts'
 ```
 
 <a href="https://www.skypack.dev" title="Skypack is a JavaScript Delivery Network for modern web apps"><h3>Skypack</h3></a>
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.skypack.dev/detect-indentation@^5.19.0'
+    import pkg from '//cdn.skypack.dev/detect-indentation@^5.20.0'
 </script>
 ```
 
@@ -72,7 +72,7 @@ import pkg from 'https://unpkg.com/detect-indentation@^5.19.0/edition-deno/index
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/detect-indentation@^5.19.0'
+    import pkg from '//unpkg.com/detect-indentation@^5.20.0'
 </script>
 ```
 
@@ -80,7 +80,7 @@ import pkg from 'https://unpkg.com/detect-indentation@^5.19.0/edition-deno/index
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/detect-indentation@5.19.0'
+    import pkg from '//dev.jspm.io/detect-indentation@5.20.0'
 </script>
 ```
 
