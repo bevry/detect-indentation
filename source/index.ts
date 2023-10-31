@@ -25,7 +25,7 @@ export default function detectIndentation(source: string): string | null {
 		const currentIndentationSize = currentIndentation.length
 		if (currentIndentationSize % initialIndentationSize !== 0) {
 			throw new Error(
-				`indentation is uneven: [${initialIndentation}] of size [${initialIndentationSize}] vs [${currentIndentation}] of size [${currentIndentationSize}]`
+				`indentation is uneven: [${initialIndentation}] of size [${initialIndentationSize}] vs [${currentIndentation}] of size [${currentIndentationSize}]`,
 			)
 		}
 	}
