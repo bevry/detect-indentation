@@ -1,6 +1,6 @@
 {
   "name": "detect-indentation",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "description": "Utility to detect the indentation used in a string",
   "homepage": "https://github.com/bevry/detect-indentation",
   "license": "Artistic-2.0",
@@ -185,8 +185,8 @@
   "devDependencies": {
     "@bevry/update-contributors": "^1.23.0",
     "@types/node": "^20.9.0",
-    "@typescript-eslint/eslint-plugin": "^6.10.0",
-    "@typescript-eslint/parser": "^6.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
     "assert-helpers": "^11.2.0",
     "eslint": "^8.53.0",
     "eslint-config-bevry": "^3.29.0",
